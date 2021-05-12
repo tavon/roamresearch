@@ -1,3 +1,4 @@
+/* Context Buttons, e.g. @someday/maybe */
 span[data-link-title^="@"] {
   padding: .3em .5em .3em;
   line-height: 1;
@@ -12,3 +13,235 @@ span[data-link-title^="@"] span.rm-page-ref--link {
 	color: #A0AEC0 !important;
 }
 
+/* Daily Logs */
+span[data-link-title="Daily Logs"] {
+  padding: .3em .5em .3em;
+  line-height: 1;
+  font-size: .9em;
+  font-weight: 400;
+  background-color: #F0FFF4;
+  border: 1px solid #9AE6B4;
+  border-radius: 5px;
+}
+
+span[data-link-title="Daily Logs"] span.rm-page-ref--link {
+	color: #38A169 !important;
+}
+
+span[data-link-title="Daily Logs"] span.rm-page-ref--link:before {
+  content: "📅";
+  margin-right: .5em;
+}
+
+/* Fleeting Notes */
+span[data-link-title="Fleeting Notes"] {
+  padding: .3em .5em .3em;
+  line-height: 1;
+  font-size: .9em;
+  font-weight: 400;
+  background-color: #FAF5FF;
+  border: 1px solid #E9D8FD;
+  border-radius: 5px;
+}
+
+span[data-link-title="Fleeting Notes"] span.rm-page-ref--link {
+	color:  #9F7AEA !important;
+}
+
+span[data-link-title="Fleeting Notes"] span.rm-page-ref--link:before {
+  content: "💭";
+  margin-right: .5em;
+}
+
+
+/* Literature Notes */
+span[data-link-title="Literature Notes"] {
+  padding: .3em .5em .3em;
+  line-height: 1;
+  font-size: .9em;
+  font-weight: 400;
+  background-color: #FFF5F7;
+  border: 1px solid #FED7E2;
+  border-radius: 5px;
+}
+
+span[data-link-title="Literature Notes"] span.rm-page-ref--link {
+	color: #FC8181 !important;
+}
+
+span[data-link-title="Literature Notes"] span.rm-page-ref--link:before {
+  content: "🗂";
+  margin-right: .5em;
+}
+
+/* Permanent Notes */
+span[data-link-title="Permanent Notes"] {
+  padding: .3em .5em .3em;
+  line-height: 1;
+  font-size: .9em;
+  font-weight: 400;
+  background-color: #E6FFFA;
+  border: 1px solid #B2F5EA;
+  border-radius: 5px;
+}
+
+span[data-link-title="Permanent Notes"] span.rm-page-ref--link {
+	color: #38B2AC !important;
+}
+
+span[data-link-title="Permanent Notes"] span.rm-page-ref--link:before {
+  content: "🗂";
+  margin-right: .5em;
+}
+
+/* Default Tag */
+span.rm-page-ref[data-tag] {
+  padding: .3em .5em .3em;
+  line-height: 1;
+  font-size: .9em;
+  font-weight: 400;
+  color: #A0AEC0;	
+  background-color: #F7FAFC;
+  border: 1px solid #EDF2F7;
+  border-radius: 5px;
+}
+
+span.rm-page-ref[data-tag]:before {
+  content: "";
+}
+
+/* Fleeting Notes Tag */
+span.rm-page-ref[data-tag="Fleeting Notes"] {
+  color:  #9F7AEA;
+  background-color: #FAF5FF;
+  border: 1px solid #E9D8FD;
+}
+
+span.rm-page-ref[data-tag="Fleeting Notes"]:before {
+  content: "💭";
+  margin-right: .5em;
+}
+
+/* Literature Notes Tag */
+span.rm-page-ref[data-tag="Literature Notes"] {
+  color: #FC8181;
+  background-color: #FFF5F7;
+  border: 1px solid #FED7E2;
+}
+
+span.rm-page-ref[data-tag="Literature Notes"]:before {
+  content: "🗂";
+  margin-right: .5em;
+}
+
+/* Permanent Notes Tag */
+span.rm-page-ref[data-tag="Permanent Notes"] {
+  color: #38B2AC;
+  background-color: #E6FFFA;
+  border: 1px solid #B2F5EA;
+}
+
+span.rm-page-ref[data-tag="Permanent Notes"]:before {
+  content: "🗂";
+  margin-right: .5em;
+}
+
+/* TODO Tag */
+span.rm-page-ref[data-tag="TODO"] {
+  color: #A0AEC0;
+  background-color: #F7FAFC;
+  border: 1px solid #CBD5E0;
+}
+
+span.rm-page-ref[data-tag="TODO"]:before {
+  content: "◻️";
+  margin-right: .5em;
+}
+
+/* DONE tag */
+span.rm-page-ref[data-tag="DONE"] {
+  color: #68D391;
+  background-color: #F0FFF4;
+  border: 1px solid #C6F6D5;
+}
+
+span.rm-page-ref[data-tag="DONE"]:before {
+  content: "☑️";
+  font-size: 1.5em;
+  display: inline-block;
+  position: relative;
+  top: 2px;
+  margin-right: .25em;
+}
+
+/* #Goal */
+span.rm-page-ref[data-tag="Goal"] {
+  color: #FC8181 !important;
+  background-color: #FFF5F5 !important;
+  border-color: #FED7D7;
+}
+ 
+span.rm-page-ref[data-tag="Goal"]:before {
+  content: "🎯";
+  margin-right: .5em;
+}
+
+/* #books */
+span.rm-page-ref[data-tag="books"] {
+  color: #F6AD55 !important;
+  background-color: #FFFAF0 !important;
+  border-color: #FEEBC8;
+}
+
+span.rm-page-ref[data-tag="books"]:before {
+  content: "📙";
+  margin-right: .5em;
+}
+
+/* #Tweets */
+span.rm-page-ref[data-tag="tweets"] {
+  color: #63B3ED !important;
+  background-color: #EBF8FF !important;
+  border-color: #BEE3F8;
+}
+
+span.rm-page-ref[data-tag="tweets"]:before {
+  content: "";
+  background-image: url("https://raw.githubusercontent.com/johan/svg-cleanups/master/logos/twitter.svg");
+  background-size: cover;
+  position: relative;
+  display: inline-block;
+  width: 14px;
+  height: 12px;
+  margin-right: .5em;
+}
+
+/* #Project */
+span.rm-page-ref[data-tag="Project"] {
+  color: #2C5282;
+  background-color: #BEE3F8;
+  border: 1px solid #90CDF4;
+}
+
+span.rm-page-ref[data-tag="Project"]:before {
+  content: "📂";
+  margin-right: .5em;
+}
+
+/* #Quote */
+span.rm-page-ref[data-tag="quote"]:before {
+  content: "💬";
+  margin-right: .5em;
+}
+
+/* #podcasts */
+span.rm-page-ref[data-tag="podcasts"] {
+  color: #F6AD55 !important;
+  background-color: #FFFAF0 !important;
+  border-color: #FEEBC8;
+}
+
+span.rm-page-ref[data-tag="podcasts"]:before {
+  content: "🎧";
+  margin-right: .5em;
+}
